@@ -35,6 +35,11 @@ function ChartComponent(props) {
                 {
                     position: "left",
                     id: "y-axis-0",
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Clicks',
+                        fontSize: 20,
+                    },
                     ticks: {
                         suggestedMax: _.max(clicks),
                         suggestedMin: _.min(clicks),
@@ -43,6 +48,11 @@ function ChartComponent(props) {
                 {
                     position: "right",
                     id: "y-axis-1",
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Impressions',
+                        fontSize: 20,
+                    },
                     ticks: {
                         suggestedMax: _.max(impressions),
                         suggestedMin: _.min(impressions),
