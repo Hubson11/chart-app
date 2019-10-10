@@ -31,7 +31,7 @@ function ChartContainer() {
 
     useEffect(() => {
         fetchData();
-    }, [data]);
+    }, []);
 
 
     function filterCampaignData() {
